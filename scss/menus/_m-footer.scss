@@ -1,0 +1,22 @@
+.dialog-off-canvas-main-canvas{
+    .menu--menu-principal-footer,
+    .menu--menu-segundario-footer{
+        .menu-list{
+            flex-direction: column;
+            .menu-item{
+                text-align: left;
+                margin-bottom: 6px;
+                .menu-link{
+                    color: $color-txt;
+                }
+                &:hover{
+                    .menu-link{
+                        padding-bottom: 0;
+                        border: 0;
+                        color: $color-primary;
+                    }
+                }
+            }
+        }
+    }
+}

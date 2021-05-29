@@ -1,0 +1,34 @@
+.menu--menu-redes-sociales{
+    .menu{
+        &-list{
+            .menu-icon-9{
+                .menu-link{
+                    background-image: url(/sites/default/files/menu_icons/facebook_0.svg);
+                }
+            }
+            .menu-icon-10{
+                .menu-link{
+                    background-image: url(/sites/default/files/menu_icons/instagram_0.svg);
+                }
+            }
+        }
+        &-item{
+            margin: 0 6px;
+        }
+        &-link{
+            background-repeat: no-repeat;
+            background-position: left center;
+            background-size: cover;
+            display: flex;
+            flex-wrap: wrap;
+            width: 14px;
+            height: 14px;
+            margin-left: 1px;
+            margin-right: 1px;
+            align-items: center;
+            justify-content: center;
+            color: transparent;
+            font-size: 0;
+        }
+    }
+}

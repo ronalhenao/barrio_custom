@@ -1,0 +1,8 @@
+.header{
+    &-menu{
+        width: 100%;
+        @media (min-width: $size-tablet2){
+            width: 80%;
+        }
+    }
+}

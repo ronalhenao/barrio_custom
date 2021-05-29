@@ -1,0 +1,41 @@
+@charset 'UTF-8';
+
+// 0. Configuration and helpers
+@import 
+  "abstracts/a-variables",
+  "abstracts/a-mixins",
+  "abstracts/a-functions",
+  "abstracts/a-helpers";
+
+// 1. Theme
+@import 
+"themes/t-theme";
+
+// 3. Base
+@import 
+  "base/b-typography";
+
+// 4. Layouts
+@import
+  "layout/l-logo",
+  "layout/l-regions",
+  "layout/l-header",
+  "layout/l-footer";
+
+// 5. Menus
+@import 
+  "menus/m-base",
+  "menus/m-main",
+  'menus/m-accesos-rapidos',
+  "menus/m-redes",
+  "menus/m-terminos",
+  'menus/m-usuario',
+  'menus/m-footer';
+
+// 5. Components
+@import 
+  'components/c-header';
+
+// 6. Page-specific styles
+@import
+'pages/p-home';

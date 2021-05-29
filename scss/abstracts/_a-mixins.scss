@@ -1,0 +1,30 @@
+
+// Links events
+
+@mixin on-event ($self: false) {
+    @if $self {
+        &,
+        &:hover,
+        &:active,
+        &:focus,
+        &:not(:disabled):not(.disabled):active,
+        &:not(:disabled):not(.disabled).active {
+            @content;
+        }
+    } @else {
+        &:hover,
+        &:active,
+        &:focus,
+        &:not(:disabled):not(.disabled):active,
+        &:not(:disabled):not(.disabled).active {
+            @content;
+        }
+    }
+}
+
+// Font
+
+@mixin font-size ($size, $line-height) {
+    font-size: $size;    
+    line-height: $line-height;
+}
