@@ -32,25 +32,10 @@
  */
 #}
 
-<article class="slide">
-    <div class="slide-content">
-        <div class="slide-container bg-green-secondary">
-            {% set field_title = fields.title.content|render|striptags|trim %}
-            <h2 class="slide-title text-uppercase color-green-primary">{{ field_title }}</h2>
-            {% if fields.body.content|render|striptags|trim %}
-                <p>{{ fields.body.content|render|striptags|trim }}</p>
-            {% endif %}
-        </div>
-    </div>
-	{% if fields.field_image.content %}
-	<figure class="slide-img">
-		{# <img class="img-fluid" src="{{ fields.field_image.content|render|striptags|trim }}" alt="" /> #}
-        {{fields.field_media.content}}
-        {% if fields.field_texto_btn.content|render|striptags|trim %}
-            <a href="{{ fields.field_link_btn.content|render|striptags|trim }}" target="_blank" class="btn btn-primary text-uppercase slide-btn">{{ fields.field_texto_btn.content|render|striptags|trim }}</a>
-        {% endif %}
-	</figure>
+<article class="reco">
+	{% if fields.field_media.content %}
+        <figure class="reco-img mb-5">
+            {{fields.field_media.content}}
+        </figure>
 	{% endif %}
 </article>
-
-

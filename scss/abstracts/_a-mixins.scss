@@ -1,6 +1,4 @@
-
 // Links events
-
 @mixin on-event ($self: false) {
     @if $self {
         &,
@@ -23,7 +21,6 @@
 }
 
 // Font
-
 @mixin font-size ($size, $line-height) {
     font-size: $size;    
     line-height: $line-height;

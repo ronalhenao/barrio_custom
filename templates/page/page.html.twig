@@ -89,4 +89,26 @@
     </main>
 {% endif %}
 
+{% if page.page_bottom_full %}
+    <section class="page-bottom--full py-4">
+        <div class="container">
+            <div class="row">
+                {{ page.page_bottom_full }}
+            </div>
+        </div>
+    </section>
+{% endif %}
+
+{% if page.page_bottom_last %}
+    <section class="page-bottom py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    {{ page.page_bottom_last }}
+                </div>
+            </div>
+        </div>
+    </section>
+{% endif %}
+
 {% include '@barrio_custom/layout/footer.html.twig' %}

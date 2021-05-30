@@ -1,8 +1,7 @@
-.path-frontpage{
-    .c-admisiones{
-        margin-bottom: 40px;
-        @media (min-width: $size-tablet2){
-            margin-bottom: 70px;  
-        }
-    }
+.page-top--full{
+    background-image: url(/sites/default/files/2021-05/aliado-agro-blur.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    padding: 100px 0;
 }

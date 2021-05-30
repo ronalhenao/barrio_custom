@@ -1,0 +1,9 @@
+.marca{
+    text-align: center;
+    &-img{
+        &--logo{
+            width: 70%;
+            margin: auto;
+        }
+    }
+}

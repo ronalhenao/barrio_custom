@@ -1,10 +1,18 @@
 #block-datoscontacto{
+    height: 100%;
+    .content{
+        height: 100%;
+        div{
+            height: 100%;
+        }
+    }
     ul{
         padding: 0;
         margin: 0;
+        display: flex;
+        align-items: center;
+        height: 100%;
         li{
-            display: inline-block;
-            vertical-align: top;
             margin-right: 40px;
             a{
                 font-size: 17px;

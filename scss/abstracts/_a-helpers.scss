@@ -1,12 +1,10 @@
-// Font weight
-
-// .font-black {
-//   font-weight: 900;
-// }
-
 // Font colors
 .color-green-primary {
     color: $green-primary;
+}
+
+.color-white-primary {
+    color: $white-primary;
 }
 
 // Bg colors
@@ -35,12 +33,82 @@
 // Btns
 .btn{
     border-radius: 50px;
+    &:focus{
+        border-color:unset;
+        box-shadow: none;
+    }
     &-primary{
         background-image: url(../img/icons/icon-arrow-circle-right-green-secondary.svg);
         background-repeat: no-repeat;
         background-position: center right;
         padding: 10px 60px 10px 16px;
         font-family: $futura-heavy;
+        border: 1px solid $green-secondary;
         @include font-size(21px, 22px);
+        &:hover,
+        &:focus{
+            border:1px solid $green-secondary;
+        }
+        &:not(:disabled):not(.disable):active{
+            background-color: $green-primary;
+            border-color:$green-primary;
+            &:focus{
+                box-shadow: none;
+            }
+        }
+    }
+    &-secondary{
+        background-image: url(../img/icons/icon-arrow-circle-right-green-primary.svg);
+        background-repeat: no-repeat;
+        background-position: center right;
+        background-color:$green-secondary;
+        padding: 10px 60px 10px 16px;
+        font-family: $futura-heavy;
+        border: 1px solid $green-secondary;
+        letter-spacing: 1px;
+        @include font-size(21px, 22px);
+        &:hover,
+        &:focus{
+            border:1px solid $green-primary;
+            background-color:$green-primary;
+        }
+        &:not(:disabled):not(.disable):active{
+            background-color: $green-secondary;
+            border-color:$green-secondary;
+            &:focus{
+                box-shadow: none;
+            }
+        }
+        &--square{
+            background-image: none;
+            background-repeat: no-repeat;
+            background-position: center right;
+            border-radius: 0;
+            border: 1px solid $white-primary;
+            display: block;
+            text-transform: uppercase;
+            font-family: $futura-book;
+            position: relative;
+            @include font-size(25px, 26px);
+            &::before{
+                content:"";
+                width: 46px;
+                height: 46px;
+                background-image: url(../img/icons/icon-chevron-right.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 12px;
+                position: absolute;
+                right: 0;
+                top: 0;
+                border-left: 1px solid $white-primary;
+                bottom: 0;
+            }
+            &:hover,
+            &:focus{
+                border:1px solid $white-primary;
+                background-color:$green-secondary;
+            }
+        }
     }
 }

@@ -29,29 +29,30 @@ body h5 a,
 body h6,
 body h6 a{
     font-weight: 400;
-
 }
 
 body h2,
 body h2 a{
-    font-size: 22px;
+    font-size: 30px;
+    font-family: $futura-heavy;
+    color: $green-secondary;
+    text-transform: uppercase;
+    margin-bottom: 0;
     @media (min-width: $size-tablet2){
-        font-size: 28px;
+        font-size: 50px;
     }
-    @media (min-width: $size-desktop){
-        font-size: 38px;
+    span{
+        color: $green-primary;
     }
 }
 
 body h3,
 body h3 a{
-    letter-spacing: 0;
-    font-size: 20px;
+    color: $white-primary;
+    font-family: $futura-heavy;
+    @include font-size(25px, 26px);
     @media (min-width: $size-tablet2){
-        font-size: 22px;
-    }
-    @media (min-width: $size-desktop){
-        font-size: 28px;
+        @include font-size(35px, 36px);
     }
 }
 
@@ -85,52 +86,4 @@ body figure{
 
 ul{
     list-style: none;
-}
-
-/* Override bootstrap */
-
-// .btn {
-// 	font-size: 12px;
-//     padding: 9px 36px 9px;
-//     font-weight: 700;
-//     position: relative;
-//     outline: unset;
-//     @include on-event{
-//         text-decoration: none;
-//         box-shadow: none;
-//     }
-//     @media (min-width: $size-tablet2){
-//         font-size: 14px;
-//     }
-//     @media (min-width: $size-desktop){
-//         font-size: 18px;
-//     }
-// }
-
-// .btn-primary {
-//     min-height: 41px;
-//     color: $color-white;
-//     @include on-event {
-//         color: $color-white;
-//         border-color: $color-primary;
-//     }           
-// }
-
-// .btn-secondary {
-//     color: $color-white;
-//     @include on-event {
-//         color: $color-white;
-//         background-color: $color-primary;
-//     }
-// }
-
-
-
-.btn-radius {
-    border-radius: 20px;
-}
-
-// Container custom
-.container-custom{
-    max-width: 1464px;
 }

@@ -12,12 +12,15 @@
         transform: translate(20px, 0px);
         width: 34%;
         @media (min-width: $size-desktop-lg){
-            width: 40%;
+            width: 35%;
         }
     }
     &-container{
-        padding: 70px 170px 70px 58px;
+        padding: 70px 86px 70px 58px;
         border-bottom-left-radius: 84px;
+        @media (min-width: $size-desktop-lg){
+            padding: 70px 170px 70px 58px;
+        }
         p{
             color: $white-primary;
         }
@@ -36,7 +39,7 @@
         transform: translate(-20px, 0px);
         width: 70%;
         @media (min-width: $size-desktop-lg){
-            width: 60%;
+            width: 75%;
         }
         img{
             width:100%;
@@ -47,6 +50,9 @@
         position: absolute;
         top: 50%;
         left: 0;
-        transform: translate(-140px, 50px);
+        transform: translate(-200px, 122px);
+        @media (min-width: $size-desktop-lg){
+            transform: translate(-200px, 60px);
+        }
     }
 }
