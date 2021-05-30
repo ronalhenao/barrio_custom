@@ -2,6 +2,10 @@
     background-image: url(/sites/default/files/2021-05/aliado-agro-blur.jpg);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 100%;
-    padding: 100px 0;
+    background-size: cover;
+    padding: 180px 0 70px 0;
+    @media (min-width: $size-tablet2){
+        background-size: 100%;
+        padding: 100px 0;
+    }
 }

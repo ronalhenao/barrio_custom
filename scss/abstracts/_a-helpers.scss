@@ -89,11 +89,14 @@
             text-transform: uppercase;
             font-family: $futura-book;
             position: relative;
-            @include font-size(25px, 26px);
+            @include font-size(16px, 18px);
+            @media (min-width: $size-tablet2){
+                @include font-size(25px, 26px);
+            }
             &::before{
                 content:"";
-                width: 46px;
-                height: 46px;
+                width: 40px;
+                height: 38px;
                 background-image: url(../img/icons/icon-chevron-right.svg);
                 background-repeat: no-repeat;
                 background-position: center;
@@ -103,6 +106,10 @@
                 top: 0;
                 border-left: 1px solid $white-primary;
                 bottom: 0;
+                @media (min-width: $size-tablet2){
+                    width: 46px;
+                    height: 46px;
+                }
             }
             &:hover,
             &:focus{

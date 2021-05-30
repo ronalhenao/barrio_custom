@@ -2,10 +2,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    @media (min-width: $size-tablet2){
+        flex-wrap: nowrap;
+    }
     h3{
         margin: 0;
+        text-align: center;
+        @media (min-width: $size-tablet2){
+            text-align: left;
+        }
     }
     &-btn{
-        width: 46%;
+        width: 100%;
+        margin-top: 20px;
+        @media (min-width: $size-tablet2){
+            width: 46%;
+            margin-top: 0;
+        }
     }
 }

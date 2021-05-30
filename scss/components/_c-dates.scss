@@ -1,19 +1,33 @@
 #block-datoscontacto{
-    height: 100%;
-    .content{
+    @media (min-width: $size-tablet2){
         height: 100%;
-        div{
+    }
+    .content{
+        @media (min-width: $size-tablet2){
             height: 100%;
+        }
+        div{
+            @media (min-width: $size-tablet2){
+                height: 100%;
+            }
         }
     }
     ul{
         padding: 0;
         margin: 0;
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
-        height: 100%;
+        justify-content: center;
+        @media (min-width: $size-tablet2){
+            height: 100%;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+        }
         li{
-            margin-right: 40px;
+            @media (min-width: $size-tablet2){
+                margin-right: 40px;
+            }
             a{
                 font-size: 17px;
             }
