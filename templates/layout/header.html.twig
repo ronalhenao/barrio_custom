@@ -1,0 +1,24 @@
+{# header #}
+<header class="header">
+    <div class="header-top py-2">
+        <div class="container">
+            <div class="row">
+                {% if page.top_header %}
+                    <div class="col-md-12 d-flex justify-content-between">
+                        {{ page.top_header }}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            {% if page.header %}
+                <div>
+                    {{ page.header }}
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</header>
+{# end - header #}

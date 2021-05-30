@@ -1,8 +1,5 @@
 .header{
-    &-menu{
-        width: 100%;
-        @media (min-width: $size-tablet2){
-            width: 80%;
-        }
-    }
+   &-top{
+       border-bottom: 3px solid $green-primary;
+   }
 }

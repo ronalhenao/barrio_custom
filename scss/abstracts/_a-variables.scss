@@ -1,25 +1,22 @@
-
 //Colors
-$color-primary: #D60812;
-$color-primary-hover:#992222;
-// $color-secondary: #006941;
-$color-black: #1A1818;
-$color-black-hover: #3f3c38;
-$color-yellow: #F7A00E;
-$color-yellow-hover:#ba8b2f;
-$color-txt: #535353;
-$color-gray: #F8F8F8;
-$color-darkgray: #7C7C7C;
-$color-darkgrayTwo: #f5f5f5;
-$color-lightgray: #FAFAFA;
-$color-white: #ffffff;
-$color-purple: #714A98;
-$color-blue: #30A4ED;
-$color-green: #5CB03C;
+$green-primary:#80BC00;
+$green-primary-hover:#19341A;
+$green-secondary:#19341A;
+$green-third:#0D1A0D;
+$white-primary:#ffffff;
+$black-primary:#3F3E3E;
+$gray-primary:#727176;
+
 //Fonts
 $roboto: 'Roboto', sans-serif;
+$futura-book: 'Conv_Futura Std Book';
+$futura-light: 'Conv_FuturaStdLight';
+$futura-bold: 'Conv_FuturaStdBold';
+$futura-heavy: 'Conv_FuturaStdHeavy';
+$bebas: 'Conv_BebasNeue-Regular';
 
 //Media queries
+$size-desktop-lg: 1600px;
 $size-desktop: 1442px;
 $size-laptop1: 1200px;
 $size-laptop2: 1024px;

@@ -1,0 +1,36 @@
+{# footer #}
+{% block footer %}
+<footer class="footer pt-5">
+    <div class="container pb-5">
+        <div class="row">
+            {% if page.footer_first %}
+                <div class="col-md-4">
+                    {{ page.footer_first }}
+                </div>
+            {% endif %}
+            {% if page.footer_second %}
+                <div class="col-md-4">
+                    {{ page.footer_second }}
+                </div>
+            {% endif %}
+            {% if page.footer_third %}
+                <div class="col-md-4">
+                    {{ page.footer_third }}
+                </div>
+            {% endif %}
+        </div>
+    </div>
+    <div class="copy py-2">
+        <div class="container">
+            <div class="row">
+                {% if page.footer_copy %}
+                    <div class="col-md-12">
+                        {{ page.footer_copy }}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</footer>
+{% endblock %}
+{# end - footer #}
