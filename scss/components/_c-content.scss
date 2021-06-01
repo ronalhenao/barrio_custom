@@ -1,0 +1,11 @@
+.info{
+    display: flex;
+    align-items: center;
+    width: 68%;
+    &-body{
+        margin-left: 20px;
+        p{
+            font-size: 22px;
+        }
+    }
+}

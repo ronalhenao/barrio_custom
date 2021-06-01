@@ -1,0 +1,13 @@
+#block-views-block-pqr-pqr{
+    width: 32%;
+}
+.pqr{
+    display: flex;
+    align-items: center;
+    &-item{
+        border-bottom: 1px solid $gray-primary;
+    }
+    &-title{
+        margin: 0;
+    }
+}
