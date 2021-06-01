@@ -11,12 +11,18 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="header-bottom container">
         <div class="row">
-            {% if page.header %}
-                <div>
-                    {{ page.header }}
-                </div>
+            {% if page.primary_menu or page.header_form %}
+              <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+              <div class="collapse navbar-collapse" id="CollapsingNavbar">
+                {{ page.primary_menu }}
+                {% if page.header_form %}
+                  <div class="form-inline navbar-form float-right">
+                    {{ page.header_form }}
+                  </div>
+                {% endif %}
+	          </div>
             {% endif %}
         </div>
     </div>

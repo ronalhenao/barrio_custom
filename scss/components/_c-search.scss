@@ -1,0 +1,38 @@
+#search-block-form{
+    padding: 0 !important;
+    .form{
+        &-group{
+            margin: 0;
+            width: 100%;
+            @media (min-width: $size-tablet2){
+                width: auto;
+            }
+        }
+        &-control{
+            background: transparent;
+            border: 0;
+            border-bottom: 1px solid $white-primary;
+            border-radius: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+            padding-right: 26px;
+            padding-left: 0;
+            color: $white-primary;
+            height: 26px;
+        }
+    }
+    .button{
+        font-size: 0;
+        background-color: transparent;
+        border: 0;
+        padding: 0;
+        width: 20px;
+        height: 24px;
+        position: absolute;
+        right: 0;
+        background-image: url(../img/icons/icon-search.svg);
+        background-repeat: no-repeat;
+        background-size: 16px;
+        background-position: center right;
+    }
+}
