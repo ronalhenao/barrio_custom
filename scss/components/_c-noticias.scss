@@ -1,0 +1,109 @@
+.noticia{
+    position: relative;
+    &-wrapper{
+        @media (min-width: $size-tablet2){
+            display: grid;
+            grid-auto-columns: minmax(15rem, auto);
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 26px;
+        }
+    }
+    &-item{
+        &--featured {
+            @media (min-width: $size-tablet2){
+                grid-column: 2/4;
+            }
+        }
+    }
+    &-img{
+        background-image: url(../img/fondo-verde.png);
+        background-repeat: no-repeat;
+        background-blend-mode: color;
+        img{
+            opacity: 0.18;
+        }
+    }
+    &-container{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        padding: 30px 24px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        p{
+            color: $white-primary;
+            line-height: 1.1;
+            font-size: 15px;
+        }
+    }
+    &-title{
+        display: flex;
+        align-items: flex-end;
+        h2{
+            transform: translate(0px, 2px);
+            line-height: 1;
+        }
+    }
+    &-btn{
+        background-image: url(../img/icons/icon-long-arrow-right-white.svg);
+        background-repeat: no-repeat;
+        background-position: center right;
+        background-size: 20px;
+        margin-bottom: 7px;
+    }
+    &.destacado{
+        margin-bottom: 16px;
+        @media (min-width: $size-tablet2){
+            display: flex;
+            margin-bottom: 0;
+        }
+        .noticia-img{
+            background: none;
+            margin-bottom: 0 !important;
+            @media (min-width: $size-tablet2){
+                width: 49%;
+            }
+            img{
+                opacity: 1;
+            }
+        }
+        .noticia-container{
+            background:$green-primary;
+            position: relative;
+            @media (min-width: $size-tablet2){
+                width: 52%;
+                padding-top:60px;
+            }
+            p{
+                color: $black-primary;
+            }
+        }
+    }
+    &-footer {
+        position: absolute;
+        bottom: -6px;
+        left: 0;
+        @media (min-width: $size-tablet2){
+            right: 0;
+            top: 10px;
+            left: unset;
+            bottom: unset;
+        }
+        a{
+            color: $green-primary;
+            font-size: 18px;
+            text-transform: uppercase;
+            background-image: url(../img/icons/icon-long-arrow-right.svg);
+            background-repeat: no-repeat;
+            background-position: center right;
+            background-size: 20px;
+            padding-right: 30px;
+            &:hover,
+            &:focus{
+                color: $green-primary;
+            }
+        }
+    }
+}

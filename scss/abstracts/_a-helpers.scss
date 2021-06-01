@@ -118,4 +118,34 @@
             }
         }
     }
+    &-third{
+        color: $white-primary;
+        font-family: $futura-heavy;
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding-left: 0;
+        border: 0;
+        border-top: 1px solid $white-primary;
+        border-radius: 0;
+        &:hover,
+        &:focus{
+            border: 0;
+            border-top:1px solid $white-primary;
+            color:$white-primary
+        }
+        &--square{
+            border: 1px solid $white-primary;
+            display: inline;
+            width: unset;
+            padding: 6px 6px;
+            font-size: 16px;
+            line-height: 1;
+            font-family: $futura-book;
+            &:hover,
+            &:focus{
+                border:1px solid $white-primary;
+            }
+        }
+    }
 }
