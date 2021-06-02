@@ -78,10 +78,12 @@
 {% endif %}
 
 {% if page.featured_top %}
-    <section class="page-featured_top">
+    <section class="page-featured_top py-5">
         <div class="container">
             <div class="row">
-                {{ page.featured_top }}
+                <div class="col-md-12 page-featured">
+                    {{ page.featured_top }}
+                </div>
             </div>
         </div>
     </section>

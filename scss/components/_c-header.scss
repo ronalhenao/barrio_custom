@@ -7,11 +7,12 @@
     flex-wrap: wrap;
     z-index: 10;
     background:$green-secondary;
-    @media (min-width: $size-tablet2){
+    @media (min-width: $size-tablet1){
         display: block;
         background:transparent;
     }
-   &-top{
+    &-top{
+       width: 100%;
        order: 1;
        border-bottom: 3px solid $green-primary;
    }

@@ -1,13 +1,13 @@
 #block-datoscontacto{
-    @media (min-width: $size-tablet2){
+    @media (min-width: $size-tablet1){
         height: 100%;
     }
     .content{
-        @media (min-width: $size-tablet2){
+        @media (min-width: $size-tablet1){
             height: 100%;
         }
         div{
-            @media (min-width: $size-tablet2){
+            @media (min-width: $size-tablet1){
                 height: 100%;
             }
         }
@@ -19,13 +19,13 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        @media (min-width: $size-tablet2){
+        @media (min-width: $size-tablet1){
             height: 100%;
             flex-wrap: nowrap;
             justify-content: flex-start;
         }
         li{
-            @media (min-width: $size-tablet2){
+            @media (min-width: $size-tablet1){
                 margin-right: 40px;
             }
             a{

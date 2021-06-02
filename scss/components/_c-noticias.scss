@@ -1,7 +1,7 @@
 .noticia{
     position: relative;
     &-wrapper{
-        @media (min-width: $size-tablet2){
+        @media (min-width: $size-tablet1){
             display: grid;
             grid-auto-columns: minmax(15rem, auto);
             grid-template-columns: repeat(3, 1fr);
@@ -9,6 +9,10 @@
         }
     }
     &-item{
+        margin-bottom: 16px;
+        @media (min-width: $size-tablet1){
+            margin-bottom:0
+        }
         &--featured {
             @media (min-width: $size-tablet2){
                 grid-column: 2/4;
@@ -19,8 +23,10 @@
         background-image: url(../img/fondo-verde.png);
         background-repeat: no-repeat;
         background-blend-mode: color;
+        background-size: cover;
         img{
             opacity: 0.18;
+            width: 100%;
         }
     }
     &-container{
@@ -62,7 +68,10 @@
         .noticia-img{
             background: none;
             margin-bottom: 0 !important;
-            @media (min-width: $size-tablet2){
+            @media (min-width: $size-laptop2){
+                width: 54%;
+            }
+            @media (min-width: $size-desktop){
                 width: 49%;
             }
             img{

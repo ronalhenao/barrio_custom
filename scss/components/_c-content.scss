@@ -1,11 +1,29 @@
 .info{
-    display: flex;
-    align-items: center;
-    width: 68%;
+    @media (min-width: $size-tablet2){
+        display: flex;
+        align-items: center;
+    }
+    @media (min-width: $size-desktop){
+        width: 68%;
+    }
     &-body{
-        margin-left: 20px;
+        @media (min-width: $size-tablet2){
+            margin-left: 20px;
+        }
+        @media (min-width: $size-tablet1){
+            padding-right: 40px;
+        }
         p{
             font-size: 22px;
+        }
+    }
+    &-img{
+        img{
+            width: 100%;
+            height: auto;
+            @media (min-width: $size-tablet2){
+                width: unset;
+            }
         }
     }
 }

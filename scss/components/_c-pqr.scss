@@ -1,6 +1,15 @@
 #block-views-block-pqr-pqr{
-    width: 32%;
+    @media (min-width: $size-desktop){
+        width: 32%;
+    }
 }
+
+.page-featured{
+    @media (min-width: $size-desktop){
+        display: flex;
+    }
+}
+
 .pqr{
     display: flex;
     align-items: center;

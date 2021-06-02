@@ -1,10 +1,11 @@
 #search-block-form{
     padding: 0 !important;
+    position: relative;
     .form{
         &-group{
             margin: 0;
             width: 100%;
-            @media (min-width: $size-tablet2){
+            @media (min-width: $size-tablet1){
                 width: auto;
             }
         }

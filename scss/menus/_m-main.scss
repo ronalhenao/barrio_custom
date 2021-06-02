@@ -5,7 +5,7 @@
             margin-left: 0;
         }
     }
-    @media (min-width: $size-tablet2){
+    @media (min-width: $size-tablet1){
         .collapse:not(.show){
             display: flex;
             flex-basis: auto;
@@ -14,7 +14,7 @@
         }
     }
     .navbar-nav{
-        @media (min-width: $size-tablet2){
+        @media (min-width: $size-tablet1){
             flex-direction: initial;
             margin-right: 8px;
         }
@@ -45,7 +45,7 @@
         height: 34px;
         margin: 8px auto 0;
         padding: 0;
-        @media (min-width: $size-tablet2){
+        @media (min-width: $size-tablet1){
             display: none;
         }
         &-icon{

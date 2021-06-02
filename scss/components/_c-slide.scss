@@ -1,12 +1,15 @@
 .slide{
     display: flex;
     flex-wrap: wrap;
-    @media (min-width: $size-tablet2){
+    @media (min-width: $size-tablet1){
         flex-wrap: nowrap;
     }
     &-item{
         padding: 0 16px;
-        @media (min-width: $size-tablet2){
+        @media (min-width: $size-tablet1){
+            padding: 0 32px;
+        }
+        @media (min-width: $size-desktop){
             padding: 0 80px;
         }
         @media (min-width: $size-desktop-lg){
@@ -16,9 +19,12 @@
     &-content{
         position: relative;
         z-index: 1;
-        @media (min-width: $size-tablet2){
+        @media (min-width: $size-tablet1){
             transform: translate(20px, 0px);
-            width: 34%;
+            width: 40%;
+        }
+        @media (min-width: $size-laptop1){
+            width: 40%;
         }
         @media (min-width: $size-desktop-lg){
             width: 35%;
@@ -26,8 +32,11 @@
     }
     &-container{
         padding: 40px 40px 30px 40px;
-        @media (min-width: $size-tablet2){
+        @media (min-width: $size-tablet1){
             border-bottom-left-radius: 84px;
+            padding: 70px 40px 70px 40px;
+        }
+        @media (min-width: $size-desktop){
             padding: 70px 86px 70px 58px;
         }
         @media (min-width: $size-desktop-lg){
@@ -44,19 +53,27 @@
         line-height: 1.1;
         @media (min-width: $size-tablet2){
             max-width: 78%;
-            font-size: 50px;
+            font-size: 45px;
+        }
+        @media (min-width: $size-laptop2){
+            max-width: 79%;
+            // font-size: 50px;
         }
         @media (min-width: $size-desktop){
-            max-width: 79%;
             font-size: 55px;
         }
+        // @media (min-width: $size-desktop-lg){
+        // }
     }
     &-img {
         position: relative;
         z-index: 2;
-        @media (min-width: $size-tablet2){
+        @media (min-width: $size-tablet1){
             margin-top: 70px;
             transform: translate(-20px, 0px);
+            width: 70%;
+        }
+        @media (min-width: $size-desktop){
             width: 70%;
         }
         @media (min-width: $size-desktop-lg){
@@ -73,11 +90,14 @@
         left: 0;
         bottom: 0;
         transform: translate(0px,22px);
-        @media (min-width: $size-tablet2){
+        @media (min-width: $size-tablet1){
             top: 50%;
             bottom: unset;
             right: unset;
-            transform: translate(-200px, 122px);
+            transform: translate(-160px, 142px);
+        }
+        @media (min-width: $size-desktop){
+            transform: translate(-200px, 104px);
         }
         @media (min-width: $size-desktop-lg){
             transform: translate(-200px, 60px);

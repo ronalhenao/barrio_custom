@@ -18,7 +18,7 @@
         justify-content: flex-start;
         padding: 42px 20px 20px 20px;
         margin-top: 50px;
-        @media (min-width: $size-tablet2){
+        @media (min-width: $size-tablet1){
             flex-wrap: nowrap;
             justify-content: center;
             position: absolute;
